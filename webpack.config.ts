@@ -37,11 +37,19 @@ export default (env: Environment): Configuration => {
         {
           test: /\.s[ac]ss$/i,
           use: [
-            // Creates `style` nodes from JS strings
-            MiniCssExtractPlugin.loader,
-            // Translates CSS into CommonJS
-            "css-loader",
-            // Compiles Sass to CSS
+            env.mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            {
+              loader: "css-loader",
+              options: {
+                modules: {
+                  auto: (resPath: string) => {
+                    return resPath.includes('.module.')
+                  },
+                  localIdentName: "[name]_[local]_[hash:base64:5]",
+                  namedExport: false
+                }
+              }
+            },
             "sass-loader",
           ],
         },
