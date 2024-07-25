@@ -1,0 +1,20 @@
+.featuresSection {
+  background: var(--color-extralight-grey);
+  padding: 4.25rem 0;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2.25rem;
+  }
+
+  .itemTitle {
+    font: var(--font-body-18-bold);
+    margin-bottom: 1.125rem;
+  }
+
+  .itemText {
+    font: var(--font-body-16);
+  }
+}
