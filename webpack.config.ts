@@ -3,6 +3,7 @@ import 'webpack-dev-server';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 interface Environment {
   [key: string]: string
@@ -25,6 +26,12 @@ export default (env: Environment): Configuration => {
       }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].[contenthash:8].css'
+      }),
+      new CopyWebpackPlugin({
+        patterns: [{
+          from: path.resolve('src', 'assets'),
+          to: 'assets'
+        }]
       })
     ],
     module: {

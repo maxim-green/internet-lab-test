@@ -5,5 +5,6 @@ export const App = () => {
     <h1>
       App will be here
     </h1>
+    <img src="assets/images/bg-1.png" alt=""/>
   </div>
 }
