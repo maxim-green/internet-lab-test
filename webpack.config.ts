@@ -42,7 +42,7 @@ export default (env: Environment): Configuration => {
           exclude: /node_modules/
         },
         {
-          test: /\.s[ac]ss$/i,
+          test: /\.s?css$/i,
           use: [
             env.mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
             {
