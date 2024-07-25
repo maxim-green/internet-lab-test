@@ -15,8 +15,8 @@ export const Input = (
 ) => {
   return <div className={classes.input}>
     <label className={classes.wrapper}>
-      <div className={classes.label}>{label}</div>
       <input type="text"/>
+      <div className={classes.label}>{label}</div>
     </label>
     <div className={classes.helper}>
       helperText

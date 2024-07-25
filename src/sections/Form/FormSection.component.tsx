@@ -9,7 +9,6 @@ export const FormSection = () => {
         Отправь форму
       </h2>
       <div>
-        Form will be here
         <Input
           value="123"
           onChange={(value) => console.log(value)}
