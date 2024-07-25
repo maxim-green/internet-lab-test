@@ -1,5 +1,6 @@
 import classes from './FormSection.module.scss';
 import {Container} from '../../components/Container';
+import {Input} from '../../components/Input';
 
 export const FormSection = () => {
   return <section className={classes.formSection} id="form">
@@ -9,6 +10,11 @@ export const FormSection = () => {
       </h2>
       <div>
         Form will be here
+        <Input
+          value="123"
+          onChange={(value) => console.log(value)}
+          label="Имя"
+        />
       </div>
     </Container>
   </section>
