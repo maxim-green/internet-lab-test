@@ -3,7 +3,7 @@ import {Container} from '../../components/Container';
 
 
 export const ThirdBlockSection = () => {
-  return <section className={classes.thirdBlockSection}>
+  return <section className={classes.thirdBlockSection} id="third-block">
     <Container className={classes.container}>
       <div className={classes.content}>
         <h3 className={classes.title}>

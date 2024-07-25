@@ -5,6 +5,8 @@ import {ThirdBlockSection} from '../sections/ThirdBlock';
 import {ReviewsSection} from '../sections/Reviews';
 import {QuestionsAndAnswersSection} from '../sections/QuestionsAndAnswers';
 import {FeaturesSection} from '../sections/Features';
+import {FormSection} from '../sections/Form';
+import {FooterSection} from '../sections/Footer';
 
 export const App = () => {
   return <div className={classes.app}>
@@ -14,5 +16,7 @@ export const App = () => {
     <ReviewsSection/>
     <QuestionsAndAnswersSection/>
     <FeaturesSection/>
+    <FormSection/>
+    <FooterSection/>
   </div>
 }
