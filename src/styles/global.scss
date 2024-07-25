@@ -1,7 +1,70 @@
 :root {
-  --font-family: "Graphik LCG", sans-serif;
+  --color-black: #191C1F;
+  --color-dark-grey: #5E646A;
+  --color-grey: #83898F;
+  --color-mid-grey: #C2C8CD;
+  --color-light-grey: #ECEFF2;
+  --color-extralight-grey: #F6F8FA;
+  --color-white: #FFFFFF;
+  --color-primary: #2A6CEA;
+  --color-primary-hover: #397DFF;
+  --color-primary-disabled: #ABCAE6;
+  --color-default: var(--color-black);
+
+  --border-radius-sm: 0.25rem;
+  --border-radius-lg: 0.5rem;
+
+  --font-family-default: "Graphik LCG", sans-serif;
+  --font-size-default: 16px;
+
+  --font-headline-1: 600 3.25rem/4rem var(--font-family-default);
+  --font-headline-2: 600 2.5rem/3.5rem var(--font-family-default);
+  --font-headline-3: 600 2rem/2.5rem var(--font-family-default);
+  --font-headline-4: 600 1.5rem/2rem var(--font-family-default);
+  --font-headline-5: 600 1.25rem/1.5rem var(--font-family-default);
+  --font-headline-6: 600 1rem/1.5rem var(--font-family-default);
+  --font-caption: 400 0.75rem/1.5rem var(--font-family-default);
+  --font-body-18: 400 1.125rem/2rem var(--font-family-default);
+  --font-body-16: 400 1rem/1.75rem var(--font-family-default);
+  --font-body-14: 400 0.875rem/1.5rem var(--font-family-default);
+  --font-body-12: 400 0.75rem/1rem var(--font-family-default);
+  --font-body-18-bold: 600 1.125rem/2rem var(--font-family-default);
+  --font-body-16-bold: 600 1rem/1.75rem var(--font-family-default);
+  --font-body-14-bold: 600 0.875rem/1.5rem var(--font-family-default);
+  --font-body-12-bold: 600 0.75rem/1rem var(--font-family-default);
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  color: var(--color-default);
+  background-color: var(--color-white);
+}
+
+h1 {
+  font: var(--font-headline-1);
+}
+
+h2 {
+  font: var(--font-headline-2);
+}
+
+h3 {
+  font: var(--font-headline-3);
+}
+
+h4 {
+  font: var(--font-headline-4);
+}
+
+h5 {
+  font: var(--font-headline-5);
+}
+
+h6 {
+  font: var(--font-headline-6);
+}
+
+p {
+  font: var(--font-body-16);
 }
