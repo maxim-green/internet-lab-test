@@ -2,7 +2,7 @@ import classes from './FeaturesSection.module.scss';
 import {Container} from '../../components/Container';
 
 export const FeaturesSection = () => {
-  return <div className={classes.featuresSection}>
+  return <section className={classes.featuresSection}>
     <Container>
       <ul className={classes.items}>
         <li className={classes.item}>
@@ -39,5 +39,5 @@ export const FeaturesSection = () => {
         </li>
       </ul>
     </Container>
-  </div>
+  </section>
 }

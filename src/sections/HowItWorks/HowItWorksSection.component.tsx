@@ -2,7 +2,7 @@ import classes from './HowItWorksSection.module.scss';
 import {Container} from '../../components/Container';
 
 export const HowItWorksSection = () => {
-  return <div className={classes.howItWorksSection}>
+  return <section className={classes.howItWorksSection}>
     <Container>
       <h2 className={classes.title}>
         Как это работает
@@ -46,5 +46,5 @@ export const HowItWorksSection = () => {
         </li>
       </ul>
     </Container>
-  </div>
+  </section>
 }

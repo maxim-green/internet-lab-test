@@ -3,7 +3,7 @@ import {Container} from '../../components/Container';
 
 
 export const ThirdBlockSection = () => {
-  return <div className={classes.thirdBlockSection}>
+  return <section className={classes.thirdBlockSection}>
     <Container className={classes.container}>
       <div className={classes.content}>
         <h3 className={classes.title}>
@@ -18,5 +18,5 @@ export const ThirdBlockSection = () => {
       </div>
       <img src="assets/images/guy.png" alt=""/>
     </Container>
-  </div>
+  </section>
 }

@@ -4,7 +4,7 @@ import {Container} from '../../components/Container';
 import {Navigation} from './Navigation';
 
 export const MainSection = () => {
-  return <div className={classes.mainSection}>
+  return <section className={classes.mainSection}>
     <Container className={classes.container}>
 
       <div className={classes.menu}>
@@ -29,5 +29,5 @@ export const MainSection = () => {
       </div>
 
     </Container>
-  </div>
+  </section>
 }

@@ -2,7 +2,7 @@ import classes from './QuestionsAndAnswersSection.module.scss';
 import {Container} from '../../components/Container';
 
 export const QuestionsAndAnswersSection = () => {
-  return <div className={classes.questionsAndAnswersSection}>
+  return <section className={classes.questionsAndAnswersSection}>
     <Container>
       <h2 className={classes.title}>
         Вопросы и ответы
@@ -11,5 +11,5 @@ export const QuestionsAndAnswersSection = () => {
         Questions and answers will be here
       </div>
     </Container>
-  </div>
+  </section>
 }
