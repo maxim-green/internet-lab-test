@@ -1,0 +1,33 @@
+.navigation, .navigationList {
+  height: 100%;
+}
+
+.navigationList {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navigationItem {
+  position: relative;
+
+  a {
+    color: var(--color-white);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 0.0625rem;
+    width: 0;
+    background: var(--color-white);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--transition-default);
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

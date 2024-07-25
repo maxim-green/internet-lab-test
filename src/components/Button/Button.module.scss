@@ -3,9 +3,10 @@
   padding: 1.25rem 2.5rem;
   border-radius: var(--border-radius-sm);
   cursor: pointer;
+  transition: var(--transition-default);
 
   &.default {
-    border: 1px solid var(--color-mid-grey);
+    border: 0.0625rem solid var(--color-mid-grey);
     background: var(--color-light-grey);
     &:hover {
       background: var(--color-white);

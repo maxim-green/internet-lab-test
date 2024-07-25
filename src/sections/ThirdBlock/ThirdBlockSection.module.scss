@@ -1,0 +1,18 @@
+.thirdBlockSection {
+  padding-bottom: 5rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .content, img {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .title {
+    margin-bottom: 1.125rem;
+  }
+}
