@@ -1,0 +1,1 @@
+export {QuestionsAndAnswersSection} from './QuestionsAndAnswersSection.component';
