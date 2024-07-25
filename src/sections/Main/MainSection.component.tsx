@@ -1,7 +1,10 @@
 import classes from './MainSection.module.scss';
+import {Button} from '../../components/Button';
 
 export const MainSection = () => {
   return <div className={classes.mainSection}>
-    Main section will be here
+    <Button>
+      Проще простого!
+    </Button>
   </div>
 }
