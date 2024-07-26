@@ -1,0 +1,12 @@
+.card {
+  padding: 1.375rem 1.375rem 2.375rem 1.375rem;
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--border-radius-lg);
+  transition: var(--transition-default);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
