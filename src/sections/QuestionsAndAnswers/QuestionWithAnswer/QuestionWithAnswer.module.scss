@@ -18,6 +18,17 @@
     }
   }
 
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(0);
+    transform-origin: center;
+    transition: var(--transition-default);
+  }
+  &.opened .icon {
+    transform: rotate(45deg);
+  }
+
   .answer {
     font: var(--font-body-18);
     transition: var(--transition-default);

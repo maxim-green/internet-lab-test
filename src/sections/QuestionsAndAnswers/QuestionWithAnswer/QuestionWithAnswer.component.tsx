@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {Icon} from '../../../components/Icon';
 import classes from './QuestionWithAnswer.module.scss';
+import cn from 'classnames';
 
 interface QuestionWithAnswerProps {
   question: string,
@@ -24,21 +25,22 @@ export const QuestionWithAnswer = (
     }
   }
 
-  return <div className={classes.questionWithAnswer}>
+  return <div className={cn(classes.questionWithAnswer, opened && classes.opened)}>
     <button
       className={classes.questionButton}
       onClick={() => setOpened((opened) => !opened)}
     >
       {question}
-      <div>
-        <Icon iconId={opened ? 'circle-x' : 'circle-plus'}/>
+      <div className={classes.icon}>
+        <Icon iconId={'circle-plus'}/>
       </div>
     </button>
     <div
       className={classes.answer}
       ref={answerRef}
       style={{
-        height: opened ? answerHeight : 0
+        height: opened ? answerHeight : 0,
+        paddingBottom: opened ? 24 : 0
       }}
     >
       {answer}
