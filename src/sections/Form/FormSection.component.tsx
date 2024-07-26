@@ -1,8 +1,11 @@
 import classes from './FormSection.module.scss';
 import {Container} from '../../components/Container';
 import {Input} from '../../components/Input';
+import {useState} from "react";
 
 export const FormSection = () => {
+  const [name, setName] = useState('');
+
   return <section className={classes.formSection} id="form">
     <Container>
       <h2 className={classes.title}>
@@ -10,8 +13,8 @@ export const FormSection = () => {
       </h2>
       <div>
         <Input
-          value="123"
-          onChange={(value) => console.log(value)}
+          value={name}
+          onChange={setName}
           label="Имя"
         />
       </div>
